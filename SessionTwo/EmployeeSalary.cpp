@@ -1,3 +1,15 @@
+/*
+Instructions
+============
+1. Identify repetitive logic in the code.
+2. Refactor using an abstract base class (Employee) with 
+   derived classes (SalariedEmployee, HourlyEmployee).
+3. Use templates or base class pointers to handle multiple employee 
+   types with reusable code.
+4. Modify main() to use polymorphism or templates to print
+   employee information without duplicating logic.
+*/
+
 import <iostream>;
 import <string>;
 
