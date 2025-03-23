@@ -18,16 +18,40 @@ Requirements
         Process inventory data dynamically.
         Use InventoryProcessor<T> to handle different data attributes.
 
-    Guidelines for Implementation
 
-    Create a templated class (`InventoryProcessor<T>) that:
-        Reads inventory data from JSON.
-        Computes total stock value.
-        Identifies the most expensive product.
-        Summarizes data by category.
+### **Guidelines for Implementation**  
 
-    Use template specialization for handling different data types:
-        Numerical operations for quantity and price.
-        String operations for product names and categories.
+1. **Create a `Product` Class**  
+    - This class represents individual products in the inventory.  
+    - Include fields for:  
+      - `name` (string)  
+      - `category` (string)  
+      - `quantity` (int)  
+      - `price` (double)  
+    - Implement a constructor for easy initialization.  
+    - Optionally, add getters or utility methods if needed.  
 
-    Implement JSON file parsing using nlohmann/json
+2. **Create a Templated `InventoryProcessor<T>` Class**  
+    - While this assignment uses `Product` as the data type, templating the class allows flexibility to read and process different data types in the future.  
+    - This makes the program adaptable to other JSON files containing different structures (e.g., employee data, sales reports, etc.).  
+    - Implement the following methods:  
+      - `readFromFile(const std::string& filename)` - Read JSON data into a vector of `T` objects.  
+      - `process()` - Perform data analysis and generate useful results (e.g., sum, average, or summaries depending on the type).  
+      - `writeToFile(const std::string& filename)` - Write results to a JSON file.  
+
+3. **Template Specialization**  
+    - Use template specialization for `InventoryProcessor<Product>` to handle product-specific operations.  
+    - Calculate the **total stock value** and identify the **most expensive product**.  
+    - Generate a **category summary** with aggregated information.
+
+4. **File Handling**  
+    - Use `std::filesystem` to check file existence.  
+    - Provide error messages if the file cannot be opened or read.  
+
+5. **JSON Parsing**  
+    - Use the [`nlohmann/json`](https://github.com/nlohmann/json) library to parse and write JSON data.  
+
+6. **Main Function**  
+    - Instantiate `InventoryProcessor<Product>` to read, process, and write results.  
+    - Allow the program to handle additional data types in the future by changing the class instantiation to `InventoryProcessor<OtherType>` if needed.  
+
