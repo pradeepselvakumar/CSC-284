@@ -63,6 +63,9 @@ Body: Dolor sit amet, consectetur adipiscing elit.
 ---
 
 ## **Part 5: Example API Calls using `cpr`**
+Note: You will need to add the following include in order to use cpr:
+
+`#include <cpr/cpr.h>`
 
 - **Read a Post:**
   ```cpp
