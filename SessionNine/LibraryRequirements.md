@@ -45,7 +45,3 @@ Create a program that manages a collection of books in a library. The library us
     - Implement a **const iterator** to traverse the books without modifying them.
     - Demonstrate how to use **reverse iterators** to display the books in reverse order.
 
----
-
-### Bonus Challenge:
-- Implement a **view** that displays books from a specific year range using the ranges library, chaining operations like `filter` and `transform` to manipulate the output.
