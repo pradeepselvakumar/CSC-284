@@ -17,6 +17,7 @@ Implement a simple multi-user chatroom system using sockets in C++. You are to w
   - Display messages received from the server in real time.
 - The client should also allow users to type and send freeform messages to others in the room.
 
+You may use the sample [ChatRoomServer.exe](https://github.com/pradeepselvakumar/CSC-284/blob/main/CapstoneProject/ChatRoomServer.exe) to program against while developing your client.
 
 ---
 
@@ -36,6 +37,8 @@ Implement a simple multi-user chatroom system using sockets in C++. You are to w
   - Maintain room membership.
   - Only deliver messages to users within the same room.
   - Notify users when others join or leave the room.
+
+Use separate classes to represent Users, Rooms,and the ChatServer itself, and add appropriate functionality to each.  
 
 ---
 
