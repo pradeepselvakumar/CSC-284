@@ -17,7 +17,9 @@ Implement a simple multi-user chatroom system using sockets in C++. You are to w
   - Display messages received from the server in real time.
 - The client should also allow users to type and send freeform messages to others in the room.
 
-You may use the sample [ChatRoomServer.exe](https://github.com/pradeepselvakumar/CSC-284/blob/main/CapstoneProject/ChatRoomServer.exe) to program against while developing your client.
+You may use the sample [ChatRoomServer.exe](https://github.com/pradeepselvakumar/CSC-284/blob/main/CapstoneProject/ChatRoomServer.exe) to program against while developing your client. Note that this ChatRoomServer.exe takes a mandatory command line arugment that specifies the port number. If executed directly by double clicking the file from Windows explorer, it will exit immediately.
+
+The client program developed in class (refer to the multi-threaded version on Moodle) can be used to communicate with the ChatRoomServer if port 54000 is specified as a command line argument to it.
 
 ---
 
