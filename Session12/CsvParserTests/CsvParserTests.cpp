@@ -12,7 +12,7 @@ TEST(CsvParserTest, SimpleUnquotedFields) {
 }
 
 TEST(CsvParserTest, QuotedFieldsWithCommas) {
-    CsvParserLib parser;
+    CsvParserLib parser; 
     std::string csv = "\"a,1\",b,c\nx,\"y,z\",w";
     auto result = parser.Parse(csv);
 
