@@ -11,7 +11,7 @@ TEST(CsvParserTest, QuotedFieldsWithCommas) {
 
 TEST(CsvParserTest, EscapedQuotes) {
 }
-
+ 
 TEST(CsvParserTest, MixedQuotedAndUnquotedFields) {
 }
 
